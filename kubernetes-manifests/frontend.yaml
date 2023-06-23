@@ -42,7 +42,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: frontend
+          image: azururepo123.azurecr.io/prasannaballa/microservices-demo:#{Build.BuildId}#
           ports:
           - containerPort: 8080
           readinessProbe:
