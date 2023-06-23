@@ -41,7 +41,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: cartservice
+        image: azururepo123.azurecr.io/prasannaballa/microservices-demo:#{Build.BuildId}#
         ports:
         - containerPort: 7070
         env:
