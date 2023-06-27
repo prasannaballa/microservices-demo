@@ -40,15 +40,10 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: checkoutservice
+          image: azururepo123.azurecr.io/prasannaballa/microservices-demo:#{Build.BuildId}#
           ports:
           - containerPort: 5050
-          readinessProbe:
-            grpc:
-              port: 5050
-          livenessProbe:
-            grpc:
-              port: 5050
+         
           env:
           - name: PORT
             value: "5050"
