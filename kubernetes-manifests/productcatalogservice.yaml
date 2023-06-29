@@ -41,7 +41,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: productcatalogservice
+        image: azururepo123.azurecr.io/prasannaballa/microservices-demo:#{Build.BuildId}#
         ports:
         - containerPort: 3550
         env:
@@ -49,12 +49,7 @@ spec:
           value: "3550"
         - name: DISABLE_PROFILER
           value: "1"
-        readinessProbe:
-          grpc:
-            port: 3550
-        livenessProbe:
-          grpc:
-            port: 3550
+        
         resources:
           requests:
             cpu: 100m
