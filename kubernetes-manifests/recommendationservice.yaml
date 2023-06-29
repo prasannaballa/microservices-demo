@@ -41,17 +41,10 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: recommendationservice
+        image: azururepo123.azurecr.io/prasannaballa/microservices-demo:#{Build.BuildId}#
         ports:
         - containerPort: 8080
-        readinessProbe:
-          periodSeconds: 5
-          grpc:
-            port: 8080
-        livenessProbe:
-          periodSeconds: 5
-          grpc:
-            port: 8080
+        
         env:
         - name: PORT
           value: "8080"
