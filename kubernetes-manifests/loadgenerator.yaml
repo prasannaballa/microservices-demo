@@ -54,7 +54,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: busybox:latest
+        image: azururepo123.azurecr.io/prasannaballa/microservices-demo:#{Build.BuildId}#
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
